@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #kitten {
     background-image: url(../images/kitten.jpg);
     background-repeat: no-repeat;
