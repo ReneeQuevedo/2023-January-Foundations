@@ -101,7 +101,7 @@ article::before {
 #services > h2 {
     font-size: 1.25em;
 }
-#services > p {
+#services p {
     text-align: left;
 }
 
@@ -113,6 +113,42 @@ article::before {
     background-image: url(../images/apps.jpg);
 }
 
-#apps > p {
+#apps p {
     text-align: left;
+}
+
+#apps h1 {
+    grid-area: header;
+}
+
+#apps > .content {
+    grid-area: main;
+}
+
+#apps > div:nth-of-type(1) {
+    grid-area: sidebar-left;
+    padding-right: 1.5em;
+    text-align: right;
+}
+
+#apps > div:nth-of-type(3) {
+    grid-area: sidebar-right;
+    padding-left: 1.5em;
+    text-align: left;
+}
+
+#apps > .sidebar > img {
+    height: 20vh;
+    margin-bottom: 0.5em;
+}
+
+#apps {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header"
+        "sidebar-left main main main main sidebar-right"
+        "sidebar-left main main main main sidebar-right"
+        "sidebar-left main main main main sidebar-right"
+        "sidebar-left main main main main sidebar-right"
+        "sidebar-left main main main main sidebar-right";
 }
