@@ -26,6 +26,7 @@ a {
 
 #home {
     background-image: url(../images/background.jpg);
+    left: 0;
 }
 
 .logo {
@@ -76,7 +77,11 @@ article {
     padding-top: 4rem;
     padding-right: 20vw;
     padding-left: 20vw;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    transition: left 0.5s ease-in-out;
+    z-index: 2;
 }
 
 article::before {
@@ -151,4 +156,90 @@ article::before {
         "sidebar-left main main main main sidebar-right"
         "sidebar-left main main main main sidebar-right"
         "sidebar-left main main main main sidebar-right";
+}
+
+#contact::before {
+    background-image: url("../images/contactbg.jpg");
+}
+
+#contact img {
+    height: 1.5em;
+    vertical-align: middle;
+    padding-bottom: 0.25em;
+    padding-right: 0.25em;
+}
+
+#contact > div {
+    display: flex;
+    flex-direction: column;
+    width: calc(2em + 12ch);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#contact a {
+    color: #303030;
+    text-decoration: underline;
+}
+
+nav > a:hover {
+    color: cyan;
+}
+nav > a {
+    transition: color .5s;
+}
+
+#home img.logo:hover {
+    transform: rotate(360deg);
+}
+
+#home img.logo {
+    transition: transform 1s;
+}
+
+#contact a img {
+    transition: transform .25s;
+}
+
+#contact a:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+article + img {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 3;
+}
+
+@keyframes animate-img {
+    0% {
+        left: -100vw;
+    }
+    40% {
+        left: 0;
+    }
+    60% {
+        left: 0;
+    }
+    100% {
+        left: -100vw;
+    }
+}
+
+article:target + img {
+    animation-name: animate-img;
+    animation-duration: 1.5s;
+}
+
+article:target {
+    left: 0;
+}
+
+article:target ~ #home {
+    left: -100vw;
 }
