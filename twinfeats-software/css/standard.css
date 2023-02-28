@@ -58,11 +58,20 @@ a {
 
 .photobox figure {
     font-size: .6em;
-    margin-left: 0;
+    /*margin-left: 0;*/
+    margin: 0;
     margin-top: .3rem;
-    margin-right: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    /*margin-top: .3rem;*/
+    /*margin-right: 1em;*/
+    /*margin-bottom: 2em;*/
     /* OR margin: .3rem 1em 2em 0; */
+}
+
+figcaption {
+    margin-top: 1.5em;
+    font-size: 0.5rem;
+    text-align: center;
 }
 
 article {
@@ -242,4 +251,95 @@ article:target {
 
 article:target ~ #home {
     left: -100vw;
+}
+
+.stage {
+    perspective: 1600px;
+    perspective-origin: 50% 0;
+    width: 22ch;
+    margin-right: 1.5em;
+}
+
+/* CSS for spinning cube photos */
+
+.stage .cube {
+    width: 22ch;
+    height: 22ch;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: rotate 10s infinite linear;
+    animation-play-state: paused;
+}
+
+.cube > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.cube:hover {
+    animation-play-state: running !important;
+}
+
+.stage .front {
+    transform: translateZ(11ch);
+}
+
+.stage .back {
+    transform: rotateY(180deg) translateZ(11ch);
+}
+
+.stage .top {
+    transform: rotateX(90deg) translateZ(11ch);
+}
+
+.stage .bottom {
+    transform: rotateX(-90deg) translateZ(11ch);
+}
+
+.stage .left {
+    transform: rotateY(-90deg) translateZ(11ch);
+}
+
+.stage .right {
+    transform: rotateY(90deg) translateZ(11ch);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg)
+    }
+    5% {
+        transform: rotateY(90deg)
+        /*.5 second mark of the 10s animation*/
+    }
+    25% {
+        transform: rotateY(90deg);
+        /*2.5 second mark of the 10s animation*/
+    }
+    30% {
+        transform: rotateY(180deg);
+        /*3 second mark of the 10s animation*/
+    }
+    50% {
+        transform: rotateY(180deg);
+        /*5 second mark of the 10s animation*/
+    }
+    55% {
+        transform: rotateY(270deg);
+        /*5.5 second mark of the 10s animation*/
+    }
+    75% {
+        transform: rotateY(270deg);
+        /*7.5 second mark of the 10s animation*/
+    }
+    80% {
+        transform: rotateY(360deg);
+        /*8 second mark of the 10s animation*/
+    }
+    100% {
+        transform: rotateY(360deg);
+        /*10 second mark of the 10s animation*/
+    }
 }
