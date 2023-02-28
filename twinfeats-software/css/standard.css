@@ -343,3 +343,7 @@ article:target ~ #home {
         /*10 second mark of the 10s animation*/
     }
 }
+
+#mobile-nav, #mobile-trigger {
+    display: none;
+}
