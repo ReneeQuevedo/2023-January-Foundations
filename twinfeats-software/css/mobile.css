@@ -22,7 +22,7 @@
 nav {
     flex-direction: column;
     top: calc(5vh + .5em);
-    max-width: 0;
+    width: 0;
     overflow: hidden;
     transition: all .5s;
 }
