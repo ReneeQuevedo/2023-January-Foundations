@@ -1,3 +1,7 @@
+html {
+    font-size: xx-large;
+}
+
 #mobile-nav {
     display: block;
     position: fixed;
@@ -38,4 +42,8 @@ nav > a:first-child {
 
 nav > a:last-child {
     padding-bottom: 0.5em;
+}
+
+.logo {
+    width: 40vw;
 }
