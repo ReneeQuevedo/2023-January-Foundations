@@ -47,3 +47,83 @@ nav > a:last-child {
 .logo {
     width: 40vw;
 }
+
+article {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1.2rem;
+}
+
+.vertical-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tagline {
+    white-space: nowrap;
+}
+
+#bonus {
+    display: block;
+    margin-top: 3em;
+}
+
+.bonus-img {
+    display: block;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+#apps > .sidebar {
+    display: none;
+}
+
+.stage .cube {
+    width: 60vw;
+    height: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photobox img {
+    height: 60vw;
+    left: 50%;
+}
+
+.stage .front {
+    transform: translateX(-50%) translateZ(30vw);
+}
+
+.stage .back {
+    transform: translateX(-50%) rotateY(180deg) translateZ(30vw);
+}
+
+.stage .top {
+    transform: translateX(-50%) rotateX(90deg) translateZ(30vw);
+}
+
+.stage .bottom {
+    transform: translateX(-50%) rotateX(-90deg) translateZ(30vw);
+}
+
+.stage .left {
+    transform: translateX(-50%) rotateY(-90deg) translateZ(30vw);
+}
+
+.stage .right {
+    transform: translateX(-50%) rotateY(90deg) translateZ(30vw);
+}
+
+figcaption {
+    font-size: 1rem;
+}
+
+.photobox {
+    flex-direction: column;
+}
+
+.stage {
+    width: 100%;
+}

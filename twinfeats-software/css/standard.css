@@ -254,7 +254,6 @@ article:target ~ #home {
 }
 
 .stage {
-    perspective: 1600px;
     perspective-origin: 50% 0;
     width: 22ch;
     margin-right: 1.5em;
@@ -344,6 +343,6 @@ article:target ~ #home {
     }
 }
 
-#mobile-nav, #mobile-trigger {
+#mobile-nav, #mobile-trigger, #bonus, .bonus-img {
     display: none;
 }
