@@ -35,3 +35,7 @@ nav > div {
 header {
     margin-top: 0;
 }
+
+nav > div > a:first-child {
+    border-left: 0;
+}
