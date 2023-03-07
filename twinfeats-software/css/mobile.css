@@ -51,7 +51,11 @@ nav > a:last-child {
 article {
     padding-left: 5vw;
     padding-right: 5vw;
+    padding-top: 5vw;
     font-size: 1.2rem;
+    height: auto;
+    min-height: 100vh;
+    position: absolute;
 }
 
 .vertical-container {
@@ -89,6 +93,11 @@ article {
     height: 60vw;
     margin-left: auto;
     margin-right: auto;
+    animation-delay: 3s;
+}
+
+#about:target .cube {
+    animation-play-state: running;
 }
 
 .photobox img {
@@ -123,10 +132,12 @@ article {
 
 figcaption {
     font-size: 1rem;
+    margin-bottom: 1em;
 }
 
 .photobox {
     flex-direction: column;
+    padding-bottom: 1em;
 }
 
 .stage {
