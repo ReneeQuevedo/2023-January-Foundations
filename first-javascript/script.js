@@ -119,7 +119,7 @@ foods.push("Nachos")
 foods.push("Cookies")
 console.log(foods.length)
 console.log(foods)
-foods.splice(2,);
+foods.splice(2,3);
 
 var testScore = 82;
 if (testScore > 99) {
