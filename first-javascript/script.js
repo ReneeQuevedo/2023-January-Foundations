@@ -100,33 +100,39 @@ shoe = 1;
 var bookBag;
 bookBag = 2;
 
-var book = "Harry Potter"
-var song = "Walking on Sunshine"
-var podcast = "The Daily"
+var book = "Harry Potter";
+var song = "Walking on Sunshine";
+var podcast = "The Daily";
 
 const company = {
     name: "Fisherman's Delight",
-    address: "34 Walliby Way San Diego, CA 45123",
+    address: {
+        streetAddress: "34 Walliby Way",
+        city: "San Diego",
+        state: "CA",
+        zip: "45123"
+    },
     phoneNumber: "204-867-5342",
-    employees: "280",
+    employees: 280,
 }
-console.log('The name of the company is ' + company.name + '. ' + 'It is located at ' + company.address + ' and its phone number is ' + company.phoneNumber + '. ' + 'The comapny has ' + company.employees + ' employees')
+console.log("The name of the company is" + " " + company.name + ". It is located at" + company.address.streetAdress + ' ' + company.address.city + ', ' + company.address.state + ' ' + company.address.zip + ' ' + 'and its phone number is ' + company.phoneNumber + '. ' + 'The company has' + ' ' + company.employees + ' employees.')
+// console.log('The name of the company is ' + company.name + '. ' + 'It is located at ' + company.address.streetAddress + ' ' + company.address.city + ' ' + company.address.state + ', ' + company.address.zip + ' and its phone number is ' + company.phoneNumber + '. ' + 'The comapny has ' + company.employees + ' employees')
 
 var foods = ["Burger", "Fries", "Sandwich", "Tots", "Tacos"];
-foods.pop(4)
+foods.pop(4);
+console.log(foods);
 foods.push("Salad")
 foods.push("Nachos")
 foods.push("Cookies")
 console.log(foods.length)
 console.log(foods)
-foods.splice(2,3);
+foods.splice(1, 4);
 
 var testScore = 82;
 if (testScore > 99) {
     console.log("You aced it!");
-} else if (testScore > 70) {
+} else if (testScore >= 70) {
     console.log("You passed!");
 } else {
     console.log("I'm sorry you didn't pass.");
 }
-
