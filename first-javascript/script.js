@@ -143,14 +143,14 @@ for (var i = 1; i <= 10; i++) {
 }
 console.log("the loop has ended");
 
-// need rest of code!!
-for (var i = 10; i >= 1; i--) {
-    console.log("i is now " + i);
-}
+// // need rest of code!!
+// for (var i = 10; i >= 1; i--) {
+//     console.log("i is now " + i);
+// }
 
-for (var i = 3; i < 22; i+3) {
-    console.log("i is now " + i);
-}
+// for (var i = 3; i < 22; i+3) {
+//     console.log("i is now " + i);
+// }
 
 var cars = ["Toyota", "Nissan", "Honda", "Subaru"];
 for (var i = 0; i < cars.length; i++) {
