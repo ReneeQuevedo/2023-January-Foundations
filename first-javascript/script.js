@@ -136,3 +136,56 @@ if (testScore > 99) {
 } else {
     console.log("I'm sorry you didn't pass.");
 }
+
+//javascript loops practice 
+for (var i = 1; i <= 10; i++) {
+    console.log("i is now " + i);
+}
+console.log("the loop has ended");
+
+// need rest of code!!
+for (var i = 10; i >= 1; i--) {
+    console.log("i is now " + i);
+}
+
+for (var i = 3; i < 22; i+3) {
+    console.log("i is now " + i);
+}
+
+var cars = ["Toyota", "Nissan", "Honda", "Subaru"];
+for (var i = 0; i < cars.length; i++) {
+    console.log("Car " + (i + 1) + " is a " + cars[i]);
+}
+console.log("That's all the cars.")
+
+
+for (var i = 1; i <= 20; i++) {
+	if (i % 2 == 0) {
+        console.log(i + " is even.");
+    } else {
+        console.log (i + " is odd.");
+    }
+}
+console.log("That's all folks!");
+
+var numMonkeys = 8;
+while (numMonkeys > 0) {
+    console.log(numMonkeys + " little monkeys, sitting on a bed.");
+    numMonkeys--;
+}
+console.log("no more monkies");
+
+var numBooks = 11;
+while (numBooks < 10) {
+    console.log("Number of books is " + numBooks);
+    numBooks++;
+}
+console.log("While loop ended");
+
+//do while loops example - do while loop will execute atleast one time even if the condition is NOT true. A while loop might never run.
+
+var numBooks = 11;
+do {
+    console.log("Number of books is " + numBooks);
+} while (numBooks < 10);
+console.log("Do while loop ended.")
