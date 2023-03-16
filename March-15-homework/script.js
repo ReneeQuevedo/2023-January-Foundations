@@ -29,3 +29,70 @@ for (var i = 1; i <= 100; i++) {
         console.log(i);
     }
 }
+
+// //in-class March 15th js functions
+
+// function printHelloWorld() {
+//     console.log("Hello World!");
+// }
+
+// printHelloWorld(); //calls the function
+
+// function add3Plus5() {
+//     var total = 3+5;
+//     console.log("Total is " + total);
+// }
+// add3Plus5();
+
+// function addTwoNumbers(num1, num2) {
+//     var total = num1 + num2;
+//     console.log("Total is " + total);
+//     return total;
+// }
+
+// addTwoNumbers(7, 12);
+
+// var price = addTwoNumbers(7, 12);
+// console.log("The price is " + price);
+
+// var houseArea;
+// var housePerimeter;
+
+// function getAreaOfHouse(length, width) {
+//     var area = length * width;
+//     return area;
+// }
+
+// function getPerimeterOfHouse(length, width) {
+//     var perimeter = (2* length) + (2 * width);
+//     return perimeter;
+// }
+
+// var houseLength = 30;
+// var houseWidth = 15;
+
+// houseArea = getAreaOfHouse(houseLength, houseWidth);
+// housePerimeter = getPerimeterOfHouse(houseLength, houseWidth);
+
+// console.log(`My house is ${houseLength} feet by ${houseWidth}
+// feet.It has an area of ${houseArea} square feet and a perimeter of 
+// ${housePerimeter} feet.`);
+
+// // or you can type it out the old way [console.log("my house is " + houseLength + " feet by "...)]
+
+// var greeting = "Hello";
+// function sayGreeting() {
+//     console.log(greeting);
+// }
+// sayGreeting();
+// console.log(greeting);
+
+// function sayGoodbye() {
+//     var goodBye = "So long!";
+//     console.log(goodBye);
+// }
+
+// sayGoodbye();
+// console.log(goodBye);
+
+//moved all commented out code to to the in-class working file I had already had started - too afraid to delete. 
