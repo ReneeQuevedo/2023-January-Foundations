@@ -1,6 +1,6 @@
 $(function() {
     $("#move").click(function() {
-        $("#block1").toggleClass("move");
+        $("#block1").toggleClass("move"); //don't need the period before class because the 'toggleClass function ONLY targets classes
     });
     $("#size").click(function() {
         $("#block1").toggleClass("size");

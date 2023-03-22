@@ -1,11 +1,6 @@
-div.move {
-    top: 50% !important;
-    left: 50% !important;
-}
-
-/* #block1.move {
-    top: 50% !important;
-    left: 50% !important;
+/* div.move {
+    top: 50%;
+    left: 50%;
 } */
 
 #block1 {
@@ -26,6 +21,7 @@ div.move {
     width: 10%;
     height: 10%;
     background-color: rgba(255, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
 }
 
 #move {
@@ -56,10 +52,11 @@ div.move {
     transform: translateX(-50%);
 }
 
-/* #block1.move {
-    top: 50% !important;
-    left: 50% !important;
-} */
+#block1.move {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 #block1.size {
     width: 20%;
