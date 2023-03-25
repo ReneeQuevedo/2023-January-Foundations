@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    font-size: 2vh;
+    color: white;
+    background-color: aliceblue;
+}
+
+#home {
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center top;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: midnightblue;
+}
+
+header > span {
+    margin-left: 8vw;
+    font-size: 1em;
+    line-height: 5rem;
+    vertical-align: middle;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin-right: 3vw;
+    line-height: 5em;
+    vertical-align: middle; 
+}
+
+header > nav > a:nth-child(10) {
+    margin-right: 0;
+}
+header > nav > a:last-child {
+    margin-right: 8vw;
+    vertical-align: super;
+    margin-left: 1vh;
+}
+
+nav a:hover {
+    color: darkmagenta;
+}
+
+main {
+    font-size: 1em;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, calc(-50% + 2em)); 
+    white-space: nowrap;
+    text-align: center;
+}
+
+main > h1 {
+    font-family: "League Script", cursive;
+    font-weight: lighter;
+    font-size: 5em;
+    margin-bottom: 2vh;
+    /* margin-bottom: 1em; */
+}
+
+main > h2 {
+    margin-top: 0;
+    /* margin-bottom: 2vh; */
+    margin-bottom: 5em;
+    font-weight: lighter;
+}
+
+main > a {
+    color: white;
+    border-radius: 20px;
+    /* border: 1px solid magenta; */
+    background-color: magenta;
+    padding: 10px 40px;
+    text-decoration: none;
+    margin-top: -90%;
+    font-weight: lighter;
+}
+
+main > a span {
+    margin-left: 2vh;
+}
