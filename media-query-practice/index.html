@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Query Practice</title>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            /*font size default*/
+            html, body {
+                font-size: 3vh;
+            }
+            /* desktop nav layout */
+            nav {
+                display: flex; /*flex container*/
+                justify-content: space-evenly; /*spread out the flex items*/
+                background-color: #000080;
+                color: white;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                box-sizing: border-box; /*so padding isn't addititve*/
+                padding: 0.5em;
+                z-index: 2; /*on top*/
+            }
+            /**/
+            nav > a {
+                color: white;
+                text-decoration: none;
+            }
+            /*Our hamburger menu- for desktop, this is not displayed*/
+            #menu {
+                display: none;
+                position: fixed;
+                top: 2vh;
+                left: 2vw;
+                z-index: 2;
+            }
+            /*Our Home Page*/
+            #home {
+                margin-top: 2em; /*put this below the fixed nav bar*/
+            }
+            /*Our page content will be arranged in a row for desktop*/
+            .photobox {
+                display: flex;
+                margin-left: 5vh;
+                margin-right: 5vh;
+            }
+            .photobox img {
+                width: 40vw;
+            }
+            figcaption {
+                text-align: center;
+                font-size: 0.8em;
+            }
+            /*Our media query for portait mode - a phone held normally*/
+            @media screen and (hover:none) and (orientation: portrait) {
+                html, body {
+                    font-size: 5vh; /*larger than display because it makes it easier to read on phones*/
+                }
+                nav {
+                    flex-direction: column; /*changes items from the default row flexing to a column flex in the menu*/
+                    display: none; /* don't display the nav on mobile, the hamburger does that */
+                    left: 2vh;
+                    top: calc(2vh + 1em); /*below the hamburger menu*/
+                    width: 12ch; /*the widest text is 12 characters long */
+                    align-items: center; /*centers the text in the menu - centers each flex items text*/
+                }
+                #menu {
+                    display: block; /*display the hamburger menu on the mobile */
+                }
+                /*this class will be added to the nav to show it*/
+                .menu-show {
+                    display: flex; /* override the display none from above*/
+                }
+                .photobox {
+                    flex-direction: column; /* changes content to a colum*/
+                }
+                .photobox img {
+                    width: 90vw; /*enlarges the image for mobile*/
+                    
+                }
+            }
+        </style>
+        <script>
+            $(function() {
+                $("body").on("click", "#menu", function() {
+                    //can only click on the menu if it is visible - which means mobile
+                    //show the nav bar
+                    $("nav").toggleClass("menu-show");
+                });
+                $("nav > a").click(function() {
+                    //when you click a nav link - this function wll hide the nav bar
+                    $("nav").removeClass("menu-show");
+                })
+            } )
+        </script>
+    </head>
+    <body>
+        <i id="menu" class="fas fa-bars"></i>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#home">Paties</a>
+            <a href="#home">Membership</a>
+            <a href="#home">Passes</a>
+            <a href="#home">Play</a>
+            <a href="#home">Gallery</a>
+            <a href="#home">About</a>
+            <a href="#home">Contact</a>
+        </nav>
+        <article id="home">
+            <div class="photobox">
+                <figure>
+                    <img src="kitty.jpg" alt="kitty">
+                    <figcaption>Cute Kitty!</figcaption>
+                </figure>
+                <p>
+                    Just a cute kitty that can't help himself but play!
+                    Just a cute kitty that can't help himself but play!
+                    Just a cute kitty that can't help himself but play!
+                </p>
+            </div>
+        </article>
+    </body>
+</html>
