@@ -48,6 +48,11 @@ nav > a {
     vertical-align: middle; /* moves the header down so there is space on top and bottom*/
 }
 
+/* To not display the hamburger menu on desktop */
+#menu {
+    display: none;
+}
+
 main {
     font-size: 2em;
     position: absolute;
