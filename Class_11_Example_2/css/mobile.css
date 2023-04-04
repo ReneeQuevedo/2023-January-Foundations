@@ -1,4 +1,3 @@
-
 header {
     position: relative;
 }
@@ -18,12 +17,20 @@ header > span {
 nav {
     flex-direction: column; /*changes items from the default row flexing to a column flex in the menu*/
     display: none; /* don't display the nav on mobile, the hamburger does that */
-    left: 2vh;
-    top: calc(2vh + 1em); /*below the hamburger menu*/
-    width: 12ch; /*the widest text is 12 characters long */
-    align-items: center; /*centers the text in the menu - centers each flex items text*/
+    width: 9ch;
+    text-align: center;
+    /* align-items: center; centers the text in the menu - centers each flex items text */
+    background-color: black;
+    padding-right: 0;
+    margin-top: 5vh;
+    margin-right: 0;
 }
 
+nav > a {
+    line-height: 2em; /* moves the header down so there is space on top and bottom*/
+    padding: .5em;
+    margin: 0 !important;
+}
 #menu {
     font-size: 5vh;
     display: block;
@@ -32,6 +39,10 @@ nav {
     top: 0;
     /* font-size: 2rem; */
     color: white;
+}
+
+.menu-show {
+    display: flex; /* override the display none from above*/
 }
 
 main {
@@ -50,30 +61,22 @@ main a { /*code for stylized buttons*/
     text-transform: uppercase; /* makes the text all uppercase */
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    margin: .5em;
     width: 20ch;
-    border: 3px solid transparent;
-    border-image: linear-gradient(90deg, blue, lightblue, turquoise);
-    border-image-slice: 30%;
     background-image: linear-gradient(90deg, blue, lightblue, turquoise);
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* color: inherit; */
     text-shadow: 1px 1px #303030; /* adds a drop shadow to the offset the text */
     text-decoration: none;
-}
-
-
-
-main a:hover {
-    display: none;
 }
 
 .teaser {
     flex-direction: column;
     top: 100vh;
     left: 50%;
-    transform: translate(-50%, 4em);
+    transform: translate(-50%, -4em);
+}
 
+.teaser > div > h2 { 
+    text-align: center;
 }
 
 .teaser > div::after {

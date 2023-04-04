@@ -120,5 +120,5 @@ main a:hover { /* the CSS for getting the box to fill with a gradient when you h
 .teaser > div > h2 > i {
     font-size: 0.8em;
     color: turquoise;
-    margin-right 0.25em;
+    margin-right: 0.25em;
 }
