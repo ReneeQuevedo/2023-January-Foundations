@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Survey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Lora&display=swap" rel="stylesheet">
+    <Link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>iTunes Gifts <br> Music Survey</h1>
+        <p>
+            Congratulations! You are one step away from your $100 iTunes gift card!
+            Just complete the following survey and you will qualify
+        </p>
+        <br>
+        <p>
+            By completing the following survey, you will enable us to customize the music offers we send to you
+            each week. Please be assured that your information will be kept private and will not be shared with
+            any other organization.
+        </p>
+        <br>
+        <form action="https://www.mccinfo.net/webresources/cgi-bin/formail.asp" method="post">
+            <p>
+                <label for="fname" class="enterInfo">
+                    First Name:
+                    <input id="fname" type="text" name="fname" required>
+                </label>
+            </p>
+            <p>
+                <label for="lname" cleass="enterInfo">
+                    Last Name:
+                    <input id="lname" type="text" name="lname" required>
+                </label>
+            </p>
+            <p>
+                <label for="email" class="enterInfo">
+                    Email:
+                    <input type="text" id="email" name="email" required>
+                </label>
+            </p>
+            <br>
+            <fieldset>
+                <legend>Select You Favorite Types of Music</legend>
+                <input type="checkbox" name="musicType" id="pop" value="pop">
+                <label for="pop">
+                    <span>
+                        <span></span>
+                    </span>
+                    Pop
+                </label>
+                <input type="checkbox" name="musicType" id="pop" value="pop">
+                <input type="checkbox" name="musicType" id="pop" value="pop">
+                <input type="checkbox" name="musicType" id="pop" value="pop">
+                <input type="checkbox" name="musicType" id="pop" value="pop">
+                <input type="checkbox" name="musicType" id="pop" value="pop">
+            </fieldset>
+
+        </form>
+    </header>
+</body>
+</html>

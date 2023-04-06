@@ -45,4 +45,11 @@ header > span#envelope > a {
     margin: 2vh;
 }
 
-/* left off adding the circle to the envelope - need help figuring out why it wont stay inside the border */
+#envelope > #redCircle > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* left off adding the circle to the envelope - need help figuring out why it wont stay inside the border 
+Can't get the logo to display either.*/
