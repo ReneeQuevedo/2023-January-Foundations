@@ -17,9 +17,9 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <article id="home"></article>
+        <article id="home">
             <header>
-                <span id="logo"><a href="./images/RQ-logo.png" alt="logo"></a></span>
+                <span><a href="#home"><img id="logo" src="./images/RQ-logo.png" alt="logo"></a></span>
                 <nav>
                     <a href="#home">HOME</a>
                     <a href="#work">WORK</a>
@@ -29,12 +29,12 @@
                 </nav>
                 <span id="envelope"><a id="redCircle" href="#contact"><i class="fa-regular fa-envelope"></i></a></span>
             </header>
-            <main>
-                <h1>HIGH <span class="text-effectW">QUALITY</span> WORK WITH A <span class="text-effectW">CREATIVE</span> EDGE</h1>
+            <main class="hero">
+                <h1>HIGH <span class="text-effectW">QUALITY</span> WORK <br> WITH A <span class="text-effectW">CREATIVE</span> EDGE</h1>
                 <a href="contact" class="longButton">LET'S TALK</a>
             </main>
             <div class="teaser">
-                <div>
+                <div class="teaserBox">
 					<h2>
                         <i class="fa-regular fa-handshake"></i>
 						TEAMWORK
@@ -42,7 +42,7 @@
 					This is fake text as a placeholder for what we want to say
 					about our business reliabilty in regards to the customer.
 				</div>
-				<div>
+				<div class="teaserBox">
 					<h2>
 						<i class="fa-regular fa-lightbulb"></i>
 						STRATEGIC
@@ -50,7 +50,7 @@
 					This is fake text as a placeholder for what we want to say
 					about our business expertise in regards to the customer.
 				</div>
-				<div>
+				<div class="teaserBox">
 					<h2>
 						<i class="fa-regular fa-gem"></i>
 						PROFESSIONAL 
@@ -59,10 +59,36 @@
 					about our business quality in regards to the customer.
 				</div>
             </div>
+        </article>
         <article id="work"></article>
         <article id="about"></article>
         <article id="services"></article>
         <article id="recs"></article>
-        <article id="contact"></article>
+        <article id="contact">
+            <h1>INTERESTED? <br><span class="text-effectW">LET'S TALK?</span></h1>
+            <div class="contactForm">
+                <form action="mailto: renee.lohaus@gmail.com" mathod="post">
+                    <fieldset class="client-info">
+                        <h2>DROP ME A MESSAGE BELOW</h2>
+                        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="emailid@email.com" required>
+                        <br>
+                        <textarea rows="10" cols="50" id="comments" name="comments">Please type your message here.</textarea> 
+                        <button type="submit">LET'S TALK</button>
+                    </fieldset>
+                </form>
+            </div>
+        </article>
+        <footer>
+            <div class="socialLinks">
+                <a href="#facebook" scr="https://www.facebook.com/renee.lohaus/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#instagram" scr="https://www.instagram.com/reneequevedo_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#linkedin" scr="https://www.linkedin.com/in/reneelohaus/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#contant" scr="mailto: renee.lohaus@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <!-- <br> -->
+            <p>Author: Renee Quevedo 2023</p>
+        </footer>
     </body>
 </html>

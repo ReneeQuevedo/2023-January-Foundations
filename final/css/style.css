@@ -5,51 +5,287 @@ html, body {
     color: white;
 }
 
+
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
-    line-height: 5em;
-    vertical-align: center;
+    justify-content: space-between;
+    line-height: 1em;
+    align-items: center;
     /* text-decoration: none;
     color: white; */
 }
 
-header > span#logo {
-    position: absolute;
-    top: 0;
-    left: 0;
+header #logo {
+    height: 5em;
+    margin: 1em 2vh;
+    max-height: 5em;
+    max-height: 5em;
 }
 
+
+/* #nav {
+    margin-top: 0;
+} */
 header > nav > a {
     text-decoration: none;
     color: white;
+    margin-right: 3vw;
     justify-content: space-evenly;
+    line-height: 5em;
+    margin-top: 0;
 }
 
-header > span#envelope > a {
-    position: absolute;
+nav > a:hover {
+    color: #FF2D2D;
+}
+
+span#envelope {
+    margin-top: 0;
+}
+
+
+#envelope > a {
+    box-sizing: border-box;
+    position: relative;
     top: 0;
     right: 0;
-    width: 40px;
+    width: 50px;
     height: 40px;
     line-height: 3em;
     vertical-align: center;
-    border: 3px solid #FF2D2D;
+    border: 2px solid #FF2D2D;
     border-radius: 50%;
+    padding: .5em;
     text-decoration: none;
     color: white;
-    margin: 2vh;
+    margin: 1em 2vh;
 }
 
-#envelope > #redCircle > i {
+#envelope > #redCircle > .fsa-envelope {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* left off adding the circle to the envelope - need help figuring out why it wont stay inside the border 
-Can't get the logo to display either.*/
+
+#envelope > a:hover {
+    border: 2px solid #FF2D2D;
+    background-color: #FF2D2D;
+    color: white;
+}
+
+.hero {
+    position:absolute;
+    margin-right: 9em;
+    width: 100%;
+    height: 50vh;
+}
+
+.hero h1 {
+    color: #FF2D2D;
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 80px;
+    /* or 80% */
+    text-align: center;
+}
+
+.hero h1 > span.text-effectW {
+    color: white;
+}
+
+.hero a.longButton {
+    box-sizing: border-box;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 45vh;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    border: 2px solid #FF2D2D;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 12px;
+}
+
+a.longButton:hover {
+    border: 2px solid #FF2D2D;
+    background-color: #FF2D2D;
+    color: white;
+}
+
+div.teaser {
+    width: 100%;
+    height: 40vw;
+    position: absolute;
+    top: 70vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/final-backimg-maplines.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 1em;
+
+}
+
+div.teaserBox {
+    position: relative;
+    box-sizing: border-box;
+    width: 20vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+    background: #232323;
+    padding: 1em;
+
+}
+
+div.teaserBox > h2 {
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 500;
+}
+
+div.teaserBox:hover {
+    background-color: #FF2D2D;
+}
+
+/* Contact Form CSS */
+
+#contact h1 {
+    color: #FF2D2D;
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 80px;
+    /* or 80% */
+    text-align: center;
+}
+
+#contact h1 > span.text-effectW {
+    color: white;
+}
+
+form {
+    box-sizing: border-box;
+    border: 2px solid #FF2D2D;
+    border-radius: 5px;
+    font: 16px/2 'Montserrat', sans-serif;
+  /*   need a [/]font size and font lineheight */
+    overflow: hidden;
+    width: 500px;
+    text-align: center;
+    margin-left: 32vw;
+    margin-right: 32vw;
+    /* padding-left: 2vw; */
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+form > fieldset > h2 {
+    font-family: "Teko", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+input {
+    border-radius: 50px;
+    width: 90%;
+    font: 16px/2 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #232323;
+    border: 2px solid #FF2D2D;
+    color: white;
+    margin-bottom: 2vh;
+}
+
+textarea {
+    border-radius: 20px;
+    font: 16px/2 'Montserrat', sans-serif;
+    background-color: #232323;
+    border: 2px solid #FF2D2D;
+    margin: 0;
+    color: white;
+}
+
+form > fieldset > button {
+    box-sizing: border-box;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #FF2D2D;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    background: #232323;
+    margin-bottom: 2vh;
+}
+
+
+form > fieldset > button:hover {
+    border: 2px solid #FF2D2D;
+    background-color: #FF2D2D;
+    color: white;
+}
+
+/* Footer CSS */
+footer {
+    position: absolute;
+    top: 140vh;
+    /* left: 0; */
+    /* bottom: 0; */
+    width: 100%;
+    height: 12vh;
+    background: #FF2D2D;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vh;
+}
+
+footer > div.socialLinks > a {
+    color: white;
+    padding: 3vw;
+    /* padding-right: 3vw; */
+    /* float: left; */
+    /* line-height: 8vh; */
+    vertical-align: middle;
+    text-align: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    margin-top: 4vh;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+    /* justify-content: center; */
+}
+
+/*
+When you click home - how do you fix the view point?
+Trouble centering the teaserBoxes
+trouble getting the footer to the bottom of the final content.
+How to link other HTML pages? OR if it is one continous page how to get it not to show until it's clicked on
+*/
