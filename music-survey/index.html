@@ -12,55 +12,88 @@
 </head>
 <body>
     <header>
-        <h1>iTunes Gifts <br> Music Survey</h1>
+        <h1>iTunes Gifts Music Survey</h1>
         <p>
-            Congratulations! You are one step away from your $100 iTunes gift card!
+            Congratulations! You are one step away from your $100 Apple Music gift card!
             Just complete the following survey and you will qualify
         </p>
-        <br>
         <p>
-            By completing the following survey, you will enable us to customize the music offers we send to you
-            each week. Please be assured that your information will be kept private and will not be shared with
+            By completing the following survey, you will enable us to customize the music 
+            offers we send to you each week. Please be assured that your information will
+            be kept private and will not be shared with
             any other organization.
         </p>
-        <br>
-        <form action="https://www.mccinfo.net/webresources/cgi-bin/formail.asp" method="post">
-            <p>
-                <label for="fname" class="enterInfo">
-                    First Name:
-                    <input id="fname" type="text" name="fname" required>
-                </label>
-            </p>
-            <p>
-                <label for="lname" cleass="enterInfo">
-                    Last Name:
-                    <input id="lname" type="text" name="lname" required>
-                </label>
-            </p>
-            <p>
-                <label for="email" class="enterInfo">
-                    Email:
-                    <input type="text" id="email" name="email" required>
-                </label>
-            </p>
-            <br>
-            <fieldset>
-                <legend>Select You Favorite Types of Music</legend>
-                <input type="checkbox" name="musicType" id="pop" value="pop">
-                <label for="pop">
-                    <span>
-                        <span></span>
-                    </span>
-                    Pop
-                </label>
-                <input type="checkbox" name="musicType" id="pop" value="pop">
-                <input type="checkbox" name="musicType" id="pop" value="pop">
-                <input type="checkbox" name="musicType" id="pop" value="pop">
-                <input type="checkbox" name="musicType" id="pop" value="pop">
-                <input type="checkbox" name="musicType" id="pop" value="pop">
-            </fieldset>
+    </header>    
+    <form action="https://www.mccinfo.net/webresources/cgi-bin/formail.asp" method="post">
+       
+        <label for="firstName" class="enterInfo">
+            First Name:
+            <input id="firstName" type="text" name="firstName" required>
+        </label>
+        <label for="lastName" class="enterInfo">
+            Last Name: 
+            <input id="lastName" type="text" name="lastName" required>
+        </label>
+        <label for="email" class="enterInfo">
+            Email:
+            <input type="text" id="email" name="email" required>
+        </label>
+    
+        <fieldset>
+            <legend>Select You Favorite Types of Music to Stream</legend>
+            <input type="checkbox" name="musicType" id="pop" value="pop">
+            <label for="pop">Pop</label>
+            <input type="checkbox" name="musicType" id="country" value="country">
+            <label for="rock">Country</label>
+            <input type="checkbox" name="musicType" id="rock" value="rock">
+            <label for="rock">Rock</label>
+            <input type="checkbox" name="musicType" id="hiphop" value="hiphop">
+            <label for="hiphpop">Hip-hop</label>
+            <input type="checkbox" name="musicType" id="classical" value="classical">
+            <label for="classical">Classical</label>
+            <input type="checkbox" name="musicType" id="other" value="other">
+            <label for="other">Other</label>
+        </fieldset>
 
-        </form>
-    </header>
+        <fieldset>
+            <legend>Select How Often You Stream Music</legend>
+            <input type="radio" name="frequency" id="several" value="several">
+            <label for="several">Several times a day</label>
+            <input type="radio" name="frequency" id="daily" value="daily">
+            <label for="daily">Once a day</label>
+            <input type="radio" name="frequency" id="weekly" value="weekly">
+            <label for="weekly">Once or more times a week</label>
+            <input type="radio" name="frequency" id="less" value="less">
+            <label for="less">Less than once a week</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select Which Source For Music You Use Most Often</legend>
+            <select name="musicSource" id="musicSource" size="1">
+                <option value="empty"></option>
+                <option value="apple">Apple Music</option>
+                <option value="amazon">Amazon Music</option>
+                <option value="spotify">Spotify</option>
+                <option value="pandora">Pandora</option>
+                <option value="none">None of the above</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>What Role Does Music Play in Your Life?</legend>
+            <textarea name="comments" id="comments" cols="60" rows="5"></textarea>
+        </fieldset>
+
+        <button type="submit" id="submit">Submit Form</button>
+        <button type="reset" id="reset">Clear Form</button>
+
+        <!-- Hidden Inputs -->
+        <input type="hidden" name="recipient" value="dtarvin@aimcodeschool.org">
+        <input type="hidden" name="subject" value="Music Survey">
+        <input type="hidden" name="return_link_title" value="Return to Survey"></input>
+    </form>
+    <footer>
+        <a href="mailto:renee.lohaus@gmail.com"> Renee Quevedo</a>
+    </footer>
 </body>
 </html>

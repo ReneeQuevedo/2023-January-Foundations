@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: salmon;
+    background-image: url(vector-speaker-1680x1050.jpg);
+    color: white;
+    font: 16px/1.4 "Lora", serif;
+}
+
+header {
+    width: 40%;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Kumbh Sans", sans-serif;
+}
+/* 
+p {
+    /* margin-left: auto; USE FOR PERSONAL SITE
+    margin-right: auto; */
+    /* width: 40%;
+} */
+
+header, form, button, footer {
+    margin: 2em;
+}
+
+form {
+    width: 40%;
+}
+
+.enterInfo {
+    display: block;
+    width: 50%;
+}
+
+.enterInfo > input {
+    float: right;
+}
+
+fieldset {
+    border: 0;
+    padding: 1em 0;
+}
+
+legend {
+    padding-top: 1em;
+}
