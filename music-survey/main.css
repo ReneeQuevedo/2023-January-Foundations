@@ -45,4 +45,28 @@ fieldset {
 
 legend {
     padding-top: 1em;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+
+button {
+    background-color: lightgreen;
+    color:black;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+}
+
+button#submit {
+    background-color: lightgreen;
+}
+button#reset {
+    background-color: orangered;
+}
+
+footer > a {
+    font-size: xx-small;
+    text-decoration: none;
+    color: white;
 }
