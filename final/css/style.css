@@ -101,6 +101,7 @@ h1 {
     line-height: 80px;
     /* or 80% */
     text-align: center;
+    margin-bottom: 5vh;
 }
 
 h1 > span.text-effectW {
@@ -166,6 +167,82 @@ div.teaserBox > h2 {
 div.teaserBox:hover {
     background-color: #FF2D2D;
 }
+
+/* Skills & Services Form CSS 
+Javascript code referenced from stack overflow answer from user Plantt [https://stackoverflow.com/users/16103775/plantt] */
+
+.skillsFlip {
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    left: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10vh;
+}
+
+.skillsFlip > .rowOne , .rowTwo {
+    display: flex;
+    flex-direction: row;
+    margin: 5px
+}
+
+div.skillBox {
+    box-sizing: border-box;
+    width: 160px;
+    height: 160px;
+    border: 2px solid #FF2D2D;
+    border-radius: 20%;
+    overflow: hidden;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
+
+div.skillBox > div#labelcolor > h1 {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -40%);
+    color: white;
+    vertical-align: middle;
+}
+
+div.skillBox > div#labelcolor > .fa-laptop , .fa-figma {
+    position: absolute;
+    font-size: 8vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*need to figure out why this isn't moving */
+}
+
+div.skillBox > div.front {
+    /* transform: rotateY(180deg); */
+}
+
+
+div.skillBox > div.back {
+    background-color: #FF2D2D;
+    color: white;
+    /* transform: rotateY(180deg); */
+}
+
+div.skillBox > div.back > h2{
+    font-family: "Teko", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3em;
+    text-align: left;
+    padding-left: 2vw;
+}
+
+/* .front , .back {
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+} */
+
 
 /* Contact Form CSS */
 
@@ -258,6 +335,10 @@ form > fieldset > button:hover {
 
 /* Recommendations CSS */
 
+#recs {
+    margin-top: 0;
+}
+
 #recs > div#testimonials {
     box-sizing: border-box;
     width: 700px;
@@ -267,6 +348,12 @@ form > fieldset > button:hover {
     color: white;
     overflow: hidden;
     font: 16px/1.2 'Montserrat', sans-serif;
+}
+
+hr {
+    background-color:#FF2D2D;
+    height: 1px;
+    border: none;
 }
 
 div.testimonial {
@@ -289,6 +376,11 @@ div.testimonial > div.recoInfo {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+div.testimonial > div.recoInfo > a {
+    text-decoration: none;
+    color: white;
 }
 
 
