@@ -168,72 +168,121 @@ div.teaserBox:hover {
     background-color: #FF2D2D;
 }
 
-/* Skills & Services Form CSS 
+/* Work Page CSS */
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+tbody tr:nth-child(even) {
+    border-bottom: 2px solid #FF2D2D;
+}
+
+tbody > tr > td.projectName {
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+tbody > tr > td.projectdecription {
+    padding-top: 0;
+}
+
+
+tbody tr td img {
+    width: 450px;
+    height: 350px;
+    text-align: right;
+}
+
+
+/* Skills & Services CSS 
 Javascript code referenced from stack overflow answer from user Plantt [https://stackoverflow.com/users/16103775/plantt] */
 
 .skillsFlip {
     display: flex;
     flex-direction: column;
-    top: 40%;
-    left: 30%;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    align-content: center;
     margin-bottom: 10vh;
 }
 
-.skillsFlip > .rowOne , .rowTwo {
+.skillsFlip > .rowOne ,
+.skillsFlip > .rowTwo {
     display: flex;
-    flex-direction: row;
-    margin: 5px
+    margin: 5px;
+    justify-content: center;
 }
 
-div.skillBox {
+.skillBox {
     box-sizing: border-box;
     width: 160px;
     height: 160px;
     border: 2px solid #FF2D2D;
     border-radius: 20%;
     overflow: hidden;
-    transition: transform 1s;
+    transition: transform 2s;
     transform-style: preserve-3d;
     margin: 5px;
 }
 
-div.skillBox > div#labelcolor > h1 {
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, -40%);
-    color: white;
-    vertical-align: middle;
+.skillBox div {
+    position: relative;
+    backface-visibility: hidden;
 }
 
-div.skillBox > div#labelcolor > .fa-laptop , .fa-figma {
+.skillBox h1 {
     position: absolute;
-    font-size: 8vh;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /*need to figure out why this isn't moving */
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
-div.skillBox > div.front {
+.skillBox figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.skillBox:hover {
+    background-color: #FF2D2D;
+}
+
+.skillBox .front {
     /* transform: rotateY(180deg); */
+    background-color: #232323;
 }
 
 
-div.skillBox > div.back {
+.skillBox .back {
     background-color: #FF2D2D;
     color: white;
-    /* transform: rotateY(180deg); */
+    transform: rotateY(180deg);
 }
 
-div.skillBox > div.back > h2{
+.card.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+.skillBox h2{
     font-family: "Teko", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 3em;
+    font-size: 2em;
+    line-height: 4vh;
+    text-align: left;
+    padding-left: 1.5vw;
+    margin-bottom: 1vh;
+}
+
+.skillBox p {
+    font-size: 1em;
     text-align: left;
     padding-left: 2vw;
 }

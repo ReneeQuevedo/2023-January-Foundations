@@ -31,14 +31,14 @@
         <article id="services">
             <h1>SKILLS <span class="text-effectW"> & SERVICES</span></h1>
             <main class="skills">
-                <div class="skillsFlip">
+                <div class="skillsFlip" class="back">
                     <div class="rowOne">
                         <div id="illustrator" class="skillBox">
                             <div class="front" id="labelcolor">
                                 <h1>Ai</h1>
                             </div>
                             <div class="back">
-                                <h2>ADOBE ILLUSTRATOR</h2>
+                                <h2>ILLUSTRATOR</h2>
                                 <p>Proficiency Level<br>EXPERT</p>
                             </div>
                         </div>
@@ -46,8 +46,8 @@
                             <div class="front" id="labelcolor">
                                 <h1>In</h1>
                             </div>
-                            <div class="Back">
-                                <h2>ADOBE INDESIGN</h2>
+                            <div class="back">
+                                <h2>INDESIGN</h2>
                                 <p>Proficiency Level<br>ADVANCED</p>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                                 <h1>Ps</h1>
                             </div>
                             <div class="back">
-                                <h2>ADOBE PHOTOSHOP</h2>
+                                <h2>PHOTOSHOP</h2>
                                 <p>Proficiency Level<br>INTERMEDIATE</p>
                             </div>
                         </div>
@@ -67,13 +67,13 @@
                                 <h1>Pr</h1>
                             </div>
                             <div class="back">
-                                <h2>ADOBE PREMIERE PRO</h2>
+                                <h2>PREMIERE PRO</h2>
                                 <p>Proficiency Level<br>NOVICE</p>
                             </div>
                         </div>
                         <div id="figma" class="skillBox">
                             <div class="front" id="labelcolor">
-                                <i class="fa-brands fa-figma"></i>
+                                <h1><i class="fa-brands fa-figma"></i></h1>
                             </div>
                             <div class="back">
                                 <h2>FIGMA</h2>
@@ -82,10 +82,10 @@
                         </div>
                         <div id="devices" class="skillBox">
                             <div class="front" id="labelcolor">
-                                <i class="fa-solid fa-laptop"></i>
+                                <h1><i class="fa-solid fa-laptop"></i></h1>
                             </div>
                             <div class="back">
-                                <h2>ADOBE PHOTOSHOP</h2>
+                                <h2>MAC / PC</h2>
                                 <p>Proficiency Level<br>INTERMEDIATE</p>
                             </div>
                         </div>
@@ -129,19 +129,19 @@
             </div>
             <p>Author: Renee Quevedo 2023</p>
         </footer>
-        <!-- <script>
+        <script>
             // Get all cards
             var cards = document.querySelectorAll(".skillBox");
             cards.forEach(card => {
-            // For each card
-            card.querySelectorAll("div").forEach(div => {
-                // For each button on the card sides
-                div.addEventListener("click", ev => {
-                // Toggle the "is-flipped" class of the button parent's parent
-                ev.target.parentElement.parentElement.classList.toggle("is-flipped");
+                // For each card
+                card.querySelectorAll("div").forEach(div => {
+                    // For each button on the card sides
+                    div.addEventListener("click", ev => {
+                        // Toggle the "is-flipped" class of the button parent's parent
+                        ev.target.parentElement.parentElement.classList.toggle("is-flipped");
+                        });
+                    });
                 });
-            });
-            });
-        </script> -->
+        </script>
     </body>
 </html>
