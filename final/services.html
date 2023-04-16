@@ -130,18 +130,13 @@
             <p>Author: Renee Quevedo 2023</p>
         </footer>
         <script>
-            // Get all cards
-            var cards = document.querySelectorAll(".skillBox");
-            cards.forEach(card => {
-                // For each card
-                card.querySelectorAll("div").forEach(div => {
-                    // For each button on the card sides
-                    div.addEventListener("click", ev => {
-                        // Toggle the "is-flipped" class of the button parent's parent
-                        ev.target.parentElement.parentElement.classList.toggle("is-flipped");
-                        });
-                    });
-                });
+            const card = document.querySelector('.skillBox')
+
+            card.addEventListener('click', function () {
+                card.classList.toggle('is-flipped');
+            });
+
+            window.addEventListener('click', cardFlip);
         </script>
     </body>
 </html>
