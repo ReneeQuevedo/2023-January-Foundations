@@ -132,8 +132,6 @@ h1 > span.text-effectW {
 div.teaser {
     width: 100%;
     height: 40vw;
-    /* position: absolute; */
-    /* top: 70vh; */
     display: flex;
     flex-direction: row;
     background-image: url(../images/final-backimg-maplines.png);
@@ -143,11 +141,45 @@ div.teaser {
 
 }
 
+.subHeader {
+    margin-top: 0;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.teaserBox {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    height: 90%;
+    background-color: #232323;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.teaserBox:nth-child(1) {
+    margin-right: 0;
+}
+
+.teaserBox:nth-child(2) {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.teaserBox:nth-child(3) {
+    margin-left: 0;
+}
+
+
+
+/*
 div.teaserBox {
     position: relative;
     box-sizing: border-box;
     width: 20vw;
-    height: 50vh;
+    height: 70vh;
     top: 40%;
     left: 30%;
     transform: translate(-50%, -50%);
@@ -156,6 +188,8 @@ div.teaserBox {
     padding: 1em;
 
 }
+*/
+
 
 div.teaserBox > h2 {
     font-family: 'Teko';
@@ -195,11 +229,13 @@ div#work {
 
 .projectText {
     flex-direction: column;
+    margin-right: 1vw;
 }
 
 .pic > img {
     max-width: 450px;
     max-height: 350px;
+    vertical-align: middle;
 }
 
 /* About CSS */
@@ -217,6 +253,7 @@ div#work {
     margin: 0;
 }
 
+/* typewritter effect attribute @codefoxx youtube channel video:https://www.youtube.com/watch?v=h_Uv_9OxA2k */
 span.blinker {
     animation: blinker 1s linear infinite;
 }
@@ -237,6 +274,8 @@ q {
     width: 500px;
     vertical-align: middle;
     margin: 0;
+    background-color: #FF2D2D;
+    padding: .5em;
 }
 
 .aboutMe > h2 {
