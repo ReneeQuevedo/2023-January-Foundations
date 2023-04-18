@@ -86,7 +86,15 @@
                             this far had been nothing short of that. 
                         </div>
                     </div>
-                    <div class="pic"><img src="./images/placeholder-project-img.png"></div>
+                    <div class="pic-wrapper">
+                        <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+                        <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+                        <ul class="slides-container" id="slides-container"> 
+                            <li class="img"></li>
+                            <li class="img"></li>
+                            <li class="img"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </article>
@@ -99,5 +107,21 @@
             </div>
             <p>Author: Renee Quevedo 2023</p>
         </footer>
+        <script>
+            const slidesContainer = document.getElementById("slides-container");
+            const slide = document.getElementsByClassName("img");
+            const prevButton = document.getElementById("slide-arrow-prev");
+            const nextButton = document.getElementById("slide-arrow-next");
+
+            nextButton.addEventListener("click", () => {
+            const slideWidth = slide.clientWidth;
+            slidesContainer.scrollLeft += slideWidth;
+            });
+
+            prevButton.addEventListener("click", () => {
+            const slideWidth = slide.clientWidth;
+            slidesContainer.scrollLeft -= slideWidth;
+            });
+        </script>
     </body>
 </html>
