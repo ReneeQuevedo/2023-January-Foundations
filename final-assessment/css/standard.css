@@ -1,7 +1,6 @@
 html {
     font-size: 16pt;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 body {
@@ -20,6 +19,8 @@ article {
 #home, #contact, #schedule  {
     position: relative;
     background-image: url(../images/playful-kitten-6683.jpg);
+    left: 0;
+    top:0;
 }
 
 h1 {
@@ -27,6 +28,10 @@ h1 {
     color: orange;
     text-shadow: 2px 2px 2px black;
     margin-top: 0;
+}
+
+h2.mobileSubH {
+    display: none;
 }
 
 span.textColor {
@@ -52,7 +57,7 @@ nav > a {
     margin-left: 3vw;
 }
 
-/*CSS for the Schedule About*/
+/*CSS for About*/
 
 #about {
     position: relative;
@@ -126,13 +131,17 @@ table {
     margin-right: auto;
 }
 
-table > .closeOut {
+.closeOut {
     position: absolute;
-    top: 0;
-    right: 0; 
+    top: 16%;
+    right: 25%; 
 }
 
 /* Contact Window CSS */
+
+#contact {
+    padding-top: 20vh;
+}
 
 .contactBox {
     box-sizing: border-box;
@@ -155,6 +164,6 @@ table > .closeOut {
 
 .closeOuttwo {
     position: absolute;
-    top: 0;
-    right: 32%; 
+    top: 16%;
+    right: 39%; 
 }
