@@ -1,34 +1,13 @@
 html {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-  }
-  
-body {
-    width: 100vw;
-    height: 100%;
+    position: relative;
 }
 
 #home, #contact, #schedule  {
     background-image: url(../images/kitten-v.jpg);
-    width: 100%;
 }
 
 #about {
     background-image: url(../images/kitten-flying-v.jpg);
-}
-
-h2.mobileSubH {
-    display: block;
-}
-
-h2.mobileSubH > span > img {
-    transform: scale(0.3);
-}
-
-h2.displaySubH {
-    display: none;
 }
 
 nav {

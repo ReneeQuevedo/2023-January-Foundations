@@ -10,8 +10,8 @@ body {
 article {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-position: center top;
+    /* background-attachment: fixed; */
     width: 100%;
     height: 100vh;
 }
@@ -19,8 +19,6 @@ article {
 #home, #contact, #schedule  {
     position: relative;
     background-image: url(../images/playful-kitten-6683.jpg);
-    left: 0;
-    top:0;
 }
 
 h1 {
@@ -28,16 +26,66 @@ h1 {
     color: orange;
     text-shadow: 2px 2px 2px black;
     margin-top: 0;
+    margin-left: 3vw;
 }
 
-h2.mobileSubH {
-    display: none;
+.sub {
+    display: flex;
+    margin-top: 0;
+    margin-left: 3vw;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+img {
+    width: 170px;
+    padding-left: 1vw;
+}
+
+.container {
+    width: 170px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.logocard {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d ;
+}
+
+.container:hover > .logocard {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border: none;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
 }
 
 span.textColor {
     color: black;
     text-shadow: none;
     /* font-weight: 500; */
+}
+
+header {
+    position: fixed;
+    z-index: 3;
+
 }
 
 nav {
@@ -71,19 +119,47 @@ nav > a {
 
 p {
     margin-top: 0;
-    padding-top: 10vh;
-    margin-left: 10vw;
+    padding-top: 20vh;
+    margin-left: 30vw;
     text-shadow: 2px 2px 2px white;
 
 }
 
 /*CSS for the Schedule Pop-up*/
 
-#schedule {
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.modal-content {
+    margin: 20% auto;
+    padding: 20px;
+}
+
+.closeBtn > img {
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
+.closeBtn > img:hover,
+.closeBtn > img:focus {
+    cursor: pointer;
+}
+
+/* #schedule {
     position: relative;
     padding-top: 20vh;
 
-}
+} */
 
 /* .schedTable {
     display: flex;
@@ -131,17 +207,39 @@ table {
     margin-right: auto;
 }
 
-.closeOut {
-    position: absolute;
-    top: 16%;
-    right: 25%; 
-}
-
 /* Contact Window CSS */
 
-#contact {
-    padding-top: 20vh;
+.modalTwo {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
+
+.modal-contentTwo {
+    margin: 20% auto;
+    padding: 20px;
+}
+
+.closeBtnTwo > img {
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
+.closeBtnTwo > img:hover,
+.closeBtnTwo > img:focus {
+    cursor: pointer;
+}
+
+/* #contact {
+    padding-top: 20vh;
+} */
 
 .contactBox {
     box-sizing: border-box;
@@ -160,10 +258,4 @@ table {
 .contactBox a {
     color: orange;
     padding-top: 35px;
-}
-
-.closeOuttwo {
-    position: absolute;
-    top: 16%;
-    right: 39%; 
 }

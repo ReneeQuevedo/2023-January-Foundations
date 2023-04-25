@@ -12,29 +12,107 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <link rel="stylesheet" href="./css/standard.css">
-        <link rel="stylesheet" href="./css/mobile.css" media="screen and (orientation: portrait)">
+		<link rel="stylesheet" media="(hover:none) and (orientation: portrait)" href="./css/mobile.css">
     </head>
     <body>
+        <article id="home">
         <header>
+            <h1>Orange <span class="textColor">is the new</span> Cat</h1>
+            <div class="sub">
+                <h2>only on</h2>
+                <div class="container">
+                    <div class="logocard">
+                        <div class="front"><img src="./images/netflix.png"></div>
+                        <div class="back"><img src="./images/netflix.png"></div>
+                    </div>
+                </div>
+            </div>
             <nav>
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#schedule">Schedule</a>
-                <a href="#contact">Contact</a>
+                <a href="#schedule" id="modalBtn" class="button">Schedule</a>
+                    <div id="simpleModal" class="modal">
+                        <div class="modal-content">
+                            <span class="closeBtn"><img src="./images/close.png"></span>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Silly Kitty</td>
+                                        <td>The first episode on which we meet a very silly kitty.</td>
+                                        <td>07/07/2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trouble in<br>Orange</td>
+                                        <td>Silly kitty gets lost and spend the night in kitty lockup.</td>
+                                        <td>07/12/2016</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Claws of<br>Fury</td>
+                                        <td>Ninja cat attacts the home and silly kitty must defend his family!</td>
+                                        <td>07/19/2016</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                <a href="#contact" id="modalBtnTwo" class="button">Contact</a>
+                    <div id="simpleModalTwo" class="modalTwo">
+                    <div class="modal-contentTwo">
+                        <span class="closeBtnTwo"><img src="./images/close.png"></span>
+                        <div class="contactBox">
+                            <a href="">(402) 555-5555</a>
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        </div>
             </nav>
+        
         </header>
-        <article id="home">
-            <h1>Orange <span class="textColor">is the new</span> Cat</h1>
-            <h2 class="displaySubH">only on <img src="./images/netflix.jpg"></h2>
-            <h2 class="mobileSubH"> only on <span><img src="./images/netflix.png"></span></h2>
         </article>
         <article id="about">
             <main>
                 <p>Kitty is no ordinary kitten. He's a<br>super-hero, too!</p>
             </main>
         </article>
-        <article id="schedule">
-            <div class="schedTable">
+        <!-- <div class="popup" onclick="myFunction()">
+            <span class="popuptext" id="schedpop">
+                <table>
+                <img src="./images/close.png" class="closeOut">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Silly Kitty</td>
+                        <td>The first episode on which we meet a very silly kitty.</td>
+                        <td>07/07/2016</td>
+                    </tr>
+                    <tr>
+                        <td>Trouble in<br>Orange</td>
+                        <td>Silly kitty gets lost and spend the night in kitty lockup.</td>
+                        <td>07/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td>Claws of<br>Fury</td>
+                        <td>Ninja cat attacts the home and silly kitty must defend his family!</td>
+                        <td>07/19/2016</td>
+                    </tr>
+                </tbody>
+                </table>
+            </span>
+        </div> -->
+        <!-- <article id="schedule"> -->
+            <!-- <div class="schedTable"> -->
                 <!-- <img src="./images/close.png" class="closeOut">
                 <div class="row">
                     <div>Silly Kitty</div>
@@ -52,7 +130,7 @@
                     <div>07/19/2016</div>
                 </div>
             </div> -->
-                <table>
+                <!-- <table>
                     <img src="./images/close.png" class="closeOut">
                     <thead>
                         <tr>
@@ -80,15 +158,7 @@
                     </tbody>
                 </table>
             </div>
-        </article>
-        <article id="contact">
-            <div class="contactBox">
-                <img src="./images/close.png" class="closeOuttwo">
-                <a href="">(402) 555-5555</a>
-                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-            </div>
-        </article>
+        </article> -->
         <script src="./js/orange.js"></script>
     </body>
 </html>
