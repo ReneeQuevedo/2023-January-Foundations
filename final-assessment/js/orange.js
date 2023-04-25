@@ -25,6 +25,24 @@ function closeModal() {
 
 //contact js
 
+// var id = null;
+// function myMove() {
+//     var elem = document.getElementById("simpleModalTwo");
+//     var pos = 0;
+//     clearInterval(id);
+//     id = setInterval(fram, 10);
+//     function fram () {
+//         if (pos == 350) {
+//             clearInterval(id);
+//         } else {
+//             pos++;
+//             elem.style.top = pos + 'px';
+//             elem.style.left = pos + 'px';
+//         }
+//     }
+// }
+
+
 // get modal element
 var modalTwo = document.getElementById('simpleModalTwo');
 // get open modal button
@@ -45,3 +63,8 @@ function openModalTwo() {
 function closeModalTwo() {
     modalTwo.style.display = 'none';
 }
+
+// window.addEventListener ('click', function() {
+//     var pageContent = document.querySelector('.page-content');
+//     pageContent.style.transform = 'translateY(0)';
+// });
