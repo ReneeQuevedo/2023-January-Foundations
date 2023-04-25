@@ -1,5 +1,6 @@
 html {
     position: relative;
+    font-size: 14pt;
 }
 
 #home, #contact, #schedule  {
@@ -13,8 +14,74 @@ html {
 nav {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
     top: 90%;
-    left: 30%;
+    left: 20%;
     z-index: 3;
+    font-size: 10pt;
+}
+
+h1 {
+    font-size: 16pt;
+}
+
+h2 {
+    font-size: 15pt;
+}
+
+.sub {
+    vertical-align: text-top;
+}
+
+.container {
+    padding-top: 15px;
+}
+
+img {
+    width: 90px;
+}
+
+table {
+    width: 500px;
+    height: 100px;
+    padding: 2px;
+    font-size: 9pt;
+}
+
+.closeBtn {
+    float: right;
+}
+
+.modal {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.modal > span > img {
+    position: absolute;
+    float: right;
+}
+
+.modal-contentTwo {
+    position: relative;
+    top: 30vh;
+}
+
+.contactBox {
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    justify-content: space-around;
+    padding: 2px;
+    position: relative;
+}
+
+.contactBox a {
+    padding-top: 5px;
+    margin: 2px;
 }

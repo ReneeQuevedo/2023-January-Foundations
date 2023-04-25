@@ -27,6 +27,7 @@ h1 {
     text-shadow: 2px 2px 2px black;
     margin-top: 0;
     margin-left: 3vw;
+    font-weight: 500;
 }
 
 .sub {
@@ -105,6 +106,17 @@ nav > a {
     margin-left: 3vw;
 }
 
+nav > a:hover {
+    cursor: url("../images/pawprint.png"),auto;
+}
+
+a:hover::before {
+    transform: translateY(1vh); 
+    transition: transform ease 2s;
+}
+
+/* feel like I'm close to the hover on menu items push up */
+
 /*CSS for About*/
 
 #about {
@@ -151,7 +163,6 @@ p {
     height: 100%;
     width: 100%;
     overflow: auto;
-    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .modal-content {
@@ -170,28 +181,6 @@ p {
     cursor: pointer;
 }
 
-/* #schedule {
-    position: relative;
-    padding-top: 20vh;
-
-} */
-
-/* .schedTable {
-    display: flex;
-    flex-direction: column;
-    color: orange;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 2px solid orange;
-    box-sizing: border-box;
-    width: 700px;
-    height: 175px;
-    border-radius: 15px;
-    font-size: 14pt;
-    padding: 5px;
-}
-
 .schedTable > img {
     position: absolute;
     top: 0;
@@ -203,9 +192,7 @@ p {
 .schedTable > .row {
     display: flex;
     flex-direction: row;
-    /* padding: 10px;
-    justify-content: space-evenly;
-} */
+}
 
 table {
     color: orange;
@@ -236,7 +223,6 @@ table {
     height: 100%;
     width: 100%;
     overflow: auto;
-    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .modal-contentTwo {
