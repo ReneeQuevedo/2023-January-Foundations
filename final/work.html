@@ -18,7 +18,7 @@
     </head>
     <body>
         <header>
-            <span><a href="#home"><img id="logo" src="./images/RQ-logo.png" alt="logo"></a></span>
+            <span><a href="#index.html"><img id="logo" src="./images/RQ-logo.png" alt="logo"></a></span>
             <nav>
                 <a href="index.html">HOME</a>
                 <a href="work.html">WORK</a>
@@ -31,7 +31,7 @@
         <article id="work">
             <h1>SAMPLING OF MY<span class="text-effectW"> WORK</span></h1>
             <div id="work">
-                <hr>
+                <hr class="workHR">
                 <div class="projectBox">
                     <div class="projectText">
                         <div class="title">GRAPHIC DESIGN</div>
@@ -47,9 +47,16 @@
                             Through all my design you will find thoughtful consideration to balance and the respect to text and graphical elements. 
                         </div>
                     </div>
-                    <div class="pic"><img src="./images/placeholder-project-img.png"></div>
+                    <div class="pic-wrapper">
+                        <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+                        <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+                        <ul class="slides-container" id="slides-container"> 
+                            <li id="firstEx" class="img"></li>
+                            <li id="firstEx" class="img"></li>
+                        </ul>
+                    </div>
                 </div>
-                <hr>
+                <hr class="workHR">
                 <div class="projectBox">
                     <div class="projectText">
                         <div class="title">BRANDING</div>
@@ -66,9 +73,17 @@
                             extra consideration that makes your brand completely recognizable in a line-up of your  competitors. 
                         </div>
                     </div>
-                    <div class="pic"><img src="./images/placeholder-project-img.png"></div>
+                    <div class="pic-wrapper">
+                        <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+                        <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+                        <ul class="slides-container" id="slides-container"> 
+                            <li id="secondEx" class="img"></li>
+                            <li id="secondEx" class="img"></li>
+                            <li id="secondEx" class="img"></li>
+                        </ul>
+                    </div>
                 </div>
-                <hr>
+                <hr class="workHR">
                 <div class="projectBox">
                     <div class="projectText">
                         <div class="title">MULTI-PLATFORM MARKETING</div>
@@ -90,9 +105,9 @@
                         <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
                         <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
                         <ul class="slides-container" id="slides-container"> 
-                            <li class="img"></li>
-                            <li class="img"></li>
-                            <li class="img"></li>
+                            <li id="thirdEx" class="img"></li>
+                            <li id="thirdEx" class="img"></li>
+                            <li id="thirdEx" class="img"></li>
                         </ul>
                     </div>
                 </div>
@@ -100,27 +115,27 @@
         </article>
         <footer>
             <div class="socialLinks">
-                <a href="#facebook" src="https://www.facebook.com/renee.lohaus/"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#instagram" src="https://www.instagram.com/reneequevedo_/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#linkedin" src="https://www.linkedin.com/in/reneelohaus/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#contact" src="mailto:renee.lohaus@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.facebook.com/renee.lohaus/" src="https://www.facebook.com/renee.lohaus/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/reneequevedo_/" src="https://www.instagram.com/reneequevedo_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/reneelohaus/" src="https://www.linkedin.com/in/reneelohaus/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:renee.lohaus@gmail.com" src="mailto:renee.lohaus@gmail.com"><i class="fa-regular fa-envelope"></i></a>
             </div>
             <p>Author: Renee Quevedo 2023</p>
         </footer>
         <script>
             const slidesContainer = document.getElementById("slides-container");
-            const slide = document.getElementsByClassName("img");
+            const slide = document.querySelectorAll(".img");
             const prevButton = document.getElementById("slide-arrow-prev");
             const nextButton = document.getElementById("slide-arrow-next");
 
             nextButton.addEventListener("click", () => {
-            const slideWidth = slide.clientWidth;
-            slidesContainer.scrollLeft += slideWidth;
+                const slideWidth = slide.clientWidth;
+                slidesContainer.scrollLeft += slideWidth;
             });
 
             prevButton.addEventListener("click", () => {
-            const slideWidth = slide.clientWidth;
-            slidesContainer.scrollLeft -= slideWidth;
+                const slideWidth = slide.clientWidth;
+                slidesContainer.scrollLeft -= slideWidth;
             });
         </script>
     </body>

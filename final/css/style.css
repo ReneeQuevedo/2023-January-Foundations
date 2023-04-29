@@ -46,6 +46,8 @@ header > nav > a {
 
 nav > a:hover {
     color: #FF2D2D;
+    transform: translateY(-1.5vw);
+    transition: all .5s ease;
 }
 
 span#envelope {
@@ -204,9 +206,13 @@ div.teaserBox:hover {
 /* Work Page CSS */
 
 div#work {
-    width: 800px;
+    width: 950px;
     margin: auto;
 
+}
+
+.workHR{
+    width: 950px;
 }
 
 .title {
@@ -246,8 +252,9 @@ div#work {
 }
 
 .slides-container {
-    height: calc(100vh - 2rem);
-    width: 100%;
+    /* height: calc(350px - 2rem); */
+    height: 350px;
+    width: 450px;
     display: flex;
     overflow: scroll;
     scroll-behavior: smooth;
@@ -295,18 +302,80 @@ div#work {
     height: 350px;
     flex: 1 0 100%;
   }
-  
-  .img:nth-child(1) {
-    background-color: #49b293;
+
+  #firstEx:nth-child(1) {
+    background-image: url(../images/AIM-Final-Images-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   
-  .img:nth-child(2) {
-    background-color: #b03532;
+  #firstEx:nth-child(2) {
+    background-image: url(../images/AIM-Final-Images-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   
-  .img:nth-child(3) {
-    background-color: #6a478f;
-    margin: 0;
+  /* #firstEx:nth-child(3) {
+    background-image: url(../images/placeholder-project-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }   */
+  
+  #secondEx:nth-child(1) {
+    background-image: url(../images/AIM-Final-Images-03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #secondEx:nth-child(2) {
+    background-image: url(../images/AIM-Final-Images-04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #secondEx:nth-child(3) {
+    background-image: url(../images/AIM-Final-Images-05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #secondEx:nth-child(4) {
+    background-image: url(../images/AIM-Final-Images-09.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #secondEx:nth-child(5) {
+    background-image: url(../images/AIM-Final-Images-10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #thirdEx:nth-child(1) {
+    background-image: url(../images/AIM-Final-Images-06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #thirdEx:nth-child(2) {
+    background-image: url(../images/AIM-Final-Images-07.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #thirdEx:nth-child(3) {
+    background-image: url(../images/AIM-Final-Images-08.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }  
 
 /*End of TEST*/
@@ -454,14 +523,14 @@ Javascript code referenced from stack overflow answer from user Plantt [https://
     font-size: 2em;
     line-height: 4vh;
     text-align: left;
-    padding-left: 1vw;
+    padding-left: .75vw;
     margin-bottom: 1vh;
 }
 
 .skillBox p {
     font-size: 1em;
     text-align: left;
-    padding-left: 1vw;
+    padding-left: .75vw;
 }
 
 /* Contact Form CSS */
@@ -590,14 +659,13 @@ div.testimonial {
     flex-direction: column;
 }
 
-div.testimonial > div.recoInfo >h2 {
+div.testimonial > div.recoInfo > h2.name {
     font-family: "Teko", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 2em;
     text-align: left;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin:0;
 }
 
 div.testimonial > div.recoInfo {
@@ -613,10 +681,16 @@ div.testimonial > div.recoInfo > a {
     margin-right: 2vw;
 }
 
+.position {
+    margin:0;
+    padding: 0;
+    color: #FF2D2D;
+    font: 1em/1.2 'Montserrat', sans-serif;
+}
+
 #testimonials:nth-last-child(1) {
     margin-bottom: 15vh;
 }
-
 
 /* Footer CSS */
 footer {
